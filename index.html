@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="bn-BD">
+<!doctype html>
+<html lang="bn" data-bs-theme="auto">
 
 <head>
     <title>Oishik – A Bijoy-like keyboard</title>
@@ -10,8 +10,7 @@
     <meta name="author" content="Md. Rifat Hasan Jihan" />
     <meta name="keywords" content="bijoy, bengali, keyboard, bijoy android, bijoy keyboard, unibijoy, unijoy" />
     <meta property="og:title" content="Oishik – A Bijoy-like keyboard" />
-    <meta property="og:description"
-        content="The best alternative for Bijoy keyboard: A cross platform Bijoy-like keyboard." />
+    <meta property="og:description" content="The best alternative for Bijoy keyboard: A cross platform Bijoy-like keyboard." />
     <meta property="og:image" content="https://oishikstudio.github.io/elements/thumbnail.jpg" />
     <meta property="og:image:width" content="2400" />
     <meta property="og:image:height" content="1260" />
@@ -22,120 +21,231 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@RH_Jihan" />
     <meta name="twitter:title" content="Oishik – A Bijoy-like keyboard" />
-    <meta name="twitter:description"
-        content="The best alternative for Bijoy keyboard: A cross platform Bijoy-like keyboard." />
+    <meta name="twitter:description" content="The best alternative for Bijoy keyboard: A cross platform Bijoy-like keyboard." />
     <meta name="twitter:image" content="https://oishikstudio.github.io/elements/thumbnail.jpg" />
+
     <link rel="canonical" href="https://oishikstudio.github.io/" />
     <link rel="shortcut icon" href="./elements/icon.ico" />
-    <link rel="stylesheet" href="./elements/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet" />
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/f83b4b844c.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/color-modes.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header> <img src="./elements/oishik logo.png" alt="Oishik logo" width="200" height="200"><br>
-            <h1 style="font-size: 28px;"><a href="index.html">ঐষীক কিবোর্ড<br>Oishik Keyboard</a></h1>
-            <p style="color: #ffffff; margin-top: -10px; margin-bottom: 5px; font-size: 18px;">The best alternative for
-                Bijoy keyboard.<br>A cross platform Bijoy-like keyboard.</p>
-            <hr>
-            <p><b><i class="fa fa-download" style="font-size:18px; position: relative; top: -2px;"></i>&nbsp;Download
-                    for</b></p>
-            <div class="grid-container">
-                <div class="item1"><a
-                        href="https://github.com/OishikStudio/Oishik_for_Windows_and_Linux/releases/download/v1.0.3.40/oishik.zip"><i
-                            class="fab fa-windows" style="font-size:36px"></i></a></div>
-                <div class="item2"><a href="https://github.com/helium314/HeliBoard"><i class="fab fa-android"
-                            style="font-size:36px"></i></a></div>
-                <div class="item3"><a
-                        href="https://github.com/OishikStudio/Oishik_for_Windows_and_Linux/releases/download/v1.0.3.40/linux.tar"><i
-                            class="fab fa-linux" style="font-size:36px"></i></a></div>
-            </div>
-            <div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
 
-                <p><b><i class="fa fa-download"
-                            style="font-size:18px; position: relative; top: -2px;"></i>&nbsp;More</b>
-                </p>
-                <ul class="fa-ul">
-                    <li class="alias"><span class="fa-li"><i class="fab fa-android"></i></span><a class="alias"
-                            target="_blank" href="android/index.html">Android App details</a></li>
-                    <li class="alias"><span class="fa-li"><i class="fas fa-file-pdf"></i></span><a class="alias"
-                            target="_blank" href="elements/overview.pdf">User guide</a></li>
-                </ul>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
 
-                <p class="grey" style="font-size: 15px;">
-                    <span class="city">
-                        <a class="grey" target="_blank"
-                            href="https://oishikstudio.github.io/unijoy/legal/privacy/index.html">Privacy Policy</a> |
-                        <a class="grey" target="_blank" href="https://rhjihan.github.io/">Contact</a>
-                    </span>
-                </p>
-        </header>
-        <section>
-            <h1 style="color:#6DC065; line-height: 1.1;"> কেন ঐষীক?</h1>
-            <hr style="border: 1px solid #6DC065;">
-            <div style="color:#ffffff; text-align: justify;">কম্পিউটারে ইংরেজি লিখতে কি কোনো আলাদা সফটওয়ার ব্যবহার করতে
-                হয়? অবশ্যই না। বরং উইন্ডোজের নিজস্ব ইনপুট মেথড সিস্টেমের মাধ্যমে ইংরেজি লেখা যায়। <br>তেমনি বাংলা লেখার
-                জন্য মূলত আলাদা সফটওয়ার ব্যবহারের প্রয়োজন পড়ে না। উইন্ডোজে <i><a target="_blank"
-                        href="https://en.wikipedia.org/wiki/InScript_keyboard">ইন্সক্রিপ্ট</a></i> নামে একটি বাংলা
-                কিবোর্ড অন্তর্ভুক্ত থাকে, যার মাধ্যমে উইন্ডোজের ইনপুট মেথড ব্যবহার করে বাংলা লেখা যায়।<br>কিন্তু আপনি
-                বিজয়ের অনুরূপ কিবোর্ড ব্যবহারে অভ্যস্ত
-                হলে ইন্সক্রিপ্ট কিবোর্ডে দক্ষ নাও হতে পারেন। এজন্য <b>ঐষীক
-                    কিবোর্ডের</b> মাধ্যমে বিজয়ের অনুরূপ একটি লেআউট ইনপুট মেথডে যুক্ত করে দিতে পারেন।<br> <span
-                    style="color:#037ef3;">ঐষীক কিবোর্ড মূলত কোনো কিবোর্ড নয়। এটি উইন্ডোজের ইনপুট মেথডে বিজয়ের অনুরূপ
-                    লেআউট যুক্ত করে দেয়ার একটি পদ্ধতি।</span><br> উইন্ডোজে ঐষীক ইন্সটল করার মাধ্যমে আপনি অন্য কোনো থার্ড
-                পার্টি সফটওয়ারের সহায়তা ছাড়াই বিজয়ের অনুরূপ লেআউটে বাংলা লিখতে পারবেন।<br> অ্যান্ড্রয়েড অ্যাপে ঐষীক
-                লেআউট ব্যবহার করার জন্য অ্যাপ
-                থেকে <i>বাংলা</i> নামের লেআউটটি সচল করে নিতে হবে, যা বিজয়ের অনুরূপ কিবোর্ডের মতো কাজ করবে।</div>
-            <h1 style="color:#6DC065; line-height: 1.1; padding-top: 30px;">ঐষীক লেআউট দেখতে কীরকম?</h1>
-            <hr style="border: 1px solid #6DC065;"> <img style="width: 100%; height: auto;"
-                src="./elements/oishik layout.svg" alt="Oishik layout"><br>
-            <h1 style="color:#6DC065; line-height: 1.1; padding-top: 30px;">ঐষীক কীভাবে তৈরি করা হয়েছে?</h1>
-            <hr style="border: 1px solid #6DC065;">
-            <div style="color:#ffffff; text-align: justify;"><i style="color:#037ef3;"
-                    class="fab fa-windows">&nbsp;</i>উইন্ডোজের জন্য ঐষীক তৈরি করার ক্ষেত্রে <a target="_blank"
-                    href="https://www.makeuseof.com/tag/create-custom-keyboard-layout-windows/">Microsoft Keyboard
-                    Layout Creator</a> ব্যবহার করা হয়েছে।</div>
-            <div style="color:#ffffff; text-align: justify;"><i style="color:#037ef3;" class="fab fa-android">&nbsp;</i>
-                <a target="_blank" href="https://github.com/helium314/HeliBoard">HeliBoard</a>,
-                <a target="_blank" href="https://github.com/florisboard/florisboard">FlorisBoard</a>,
-                <a target="_blank"
-                    href="https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod">Simple
-                    Keyboard</a>
-                অ্যান্ড্রয়েড অ্যাপে ঐষীক লেআউটের অনুরূপ মোবাইলের অপেক্ষাকৃত ছোটো স্ক্রিনের জন্য উপযোগী করা <a
-                    href="https://oishikstudio.github.io/unijoy">ইউনিজয় (ভার্চুয়াল)</a> ব্যবহার করা হয়েছে।
+
+
+
+    <div class="px-4 py-5 my-1 text-center" style="font-family: Belanosima;">
+        <img class="d-block mx-auto mb-4" src="./elements/oishik logo-02.svg" alt="" height="80">
+        <h1 class="display-5 text-body-emphasis">Oishik Keyboard</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="mb-4" style="font-size: 22px;">The best alternative for Bijoy keyboard.<br>
+                A cross platform Bijoy-like keyboard.</p>
+        </div>
+    </div>
+    <div class="container px-4 py-1" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">ডাউনলোড</h2>
+        <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">উইন্ডোজ ইন্সটলার</h3>
+                    <p>উইন্ডোজের জন্য ঐষীক কিবোর্ড তৈরি করার ক্ষেত্রে <span style="font-family: Belanosima;">Microsoft Keyboard Layout Creator</span> ব্যবহার করা
+                        হয়েছে।</p>
+                    <a href="https://github.com/OishikStudio/Oishik_for_Windows_and_Linux/releases/download/v1.0.3.40/oishik.zip"
+                        class="btn btn-primary">
+                        Download
+                    </a>
+                </div>
             </div>
-            <div style="color:#ffffff; text-align: justify;"><i style="color:#037ef3;"
-                    class="fab fa-linux">&nbsp;</i>লিনাক্স ভিত্তিক অপারেটিং সিস্টেম, যেমন: উবুন্টুতে ঐষীক লেআউট
-                ব্যবহারের জন্য মূলত ibus engine ব্যবহৃত হয়। এজন্য প্রয়োজনীয় mim ফাইল সরবারহ করা হয়েছে। XKB এর মাধ্যমেও
-                ব্যবহার করা যাবে,
-                তবে তাতে র-ফলা ও য-ফলা ব্যবহারের জন্য একক key-এর সুযোগ থাকবে না।</div>
-            <h1 style="color:#6DC065; line-height: 1.1; padding-top: 30px;">বিজয় এবং ঐষীক লেআউটের পার্থক্য</h1>
-            <hr style="border: 1px solid #6DC065;">
-            <div style="color:#ffffff; text-align: justify;">বিজয় লেআউট মূলত আসকি ভিত্তিক বিজয় সফটওয়ারের সাথে কম্পাটিবল
-                করার জন্য তৈরি করা হয়েছিল। এজন্য মূল বিজয় লেআউটে <i>ও</i> এর জন্য আলাদা একটি key রাখা হয়েছে, যেখানে ঐষীক
-                লেআউটে আছে <i>ো (ও-কার)।</i> <br>বিজয় কিবোর্ডে এ-কার, ঐ-কার ব্যবহারের জন্য
-                তা ব্যঞ্জনবর্ণের প্রথমে লিখতে হয়, যা পুরাতন পদ্ধতি। অন্যদিকে ঐষীক যেহেতু সিস্টেমের ইউনিকোড ভিত্তিক ইনপুট
-                মেথড ব্যবহার করে, সেজন্য এতে স্বরবর্ণের কার সবসময় ব্যঞ্জনের পরে যুক্ত করতে হয়। <br>অন্যদিকে বিজয় লেআউটে
-                <i>ো, ৌ</i> চিহ্নগুলো নেই,
-                কারণ এগুলো বিজয় কিবোর্ডে ভেঙে লিখতে হয়। অন্যদিকে ঐষীক কিবোর্ডে ইউনিকোডের সাথে সামঞ্জস্য রাখার জন্য এই
-                চিহ্নগুলো রাখা হয়েছে। <br>এছাড়া <i><a target="_blank"
-                        href="https://en.wikipedia.org/wiki/Zero-width_joiner">ZERO-WIDTH JOINER</a>, <a target="_blank"
-                        href="https://en.wikipedia.org/wiki/Zero-width_non-joiner">ZERO-WIDTH NON-JOINER</a></i> এর মতো
-                কিছু বিশেষ ইউনিকোড ক্যারেক্টার ঐষীক কিবোর্ডে আছে, যা বাংলা টাইপিংয়ের জন্য মাঝেমাঝে প্রয়োজন পড়ে।
-                অ্যান্ড্রয়েডের লেআউটে দাঁড়ি, খণ্ড ৎ,
-                বিসর্গ, চন্দ্রবিন্দুর পজিশন মূল বিজয় কিবোর্ডের থেকে আলাদা।<br>
-                <i class="fas fa-exclamation-triangle"></i>&nbsp;এর পরেও যদি আপনার কাছে মনে হয় যে ঐষীক কিবোর্ডে বিজয়ের
-                কপিরাইট লঙ্ঘন করা হয়েছে, তাহলে <a target="_blank" href="https://en.wikipedia.org/wiki/QWERTY">QWERTY</a>
-                এবং <a target="_blank" href="https://en.wikipedia.org/wiki/QWERTZ">QWERTZ</a> লেআউট দুটোর কথা একবার
-                ভাবুন। কেবল একটি বর্ণের পজিশনের পার্থক্যে নতুন একটি লেআউটের উৎপত্তি হয়েছে।
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fab fa-android"></i>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">অ্যান্ড্রয়েড কিবোর্ড</h3>
+                    <p><a target="_blank" href="https://github.com/helium314/HeliBoard"><span style="font-family: Belanosima;">HeliBoard</span></a>,
+                        <a target="_blank" href="https://github.com/florisboard/florisboard"><span style="font-family: Belanosima;">FlorisBoard</span></a>,
+                        <a target="_blank"
+                            href="https://play.google.com/store/apps/details?id=rkr.simplekeyboard.inputmethod"><span style="font-family: Belanosima;">Simple
+                                Keyboard</span></a>
+                        অ্যান্ড্রয়েড অ্যাপে ঐষীক লেআউটের অনুরূপ মোবাইলের অপেক্ষাকৃত ছোটো স্ক্রিনের জন্য উপযোগী করা
+                        ইউনিজয় (ভার্চুয়াল) ব্যবহার করা হয়েছে।
+                    </p>
+                    <a href="https://oishikstudio.github.io/android/index.html" class="btn btn-primary">
+                        Explore
+                    </a>
+                </div>
             </div>
-        </section>
-    </div> <img src="https://iplogger.org/1PW4r7" width="0" height="0">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <i class="fab fa-linux"></i>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">লিনাক্স</h3>
+                    <p>লিনাক্স ভিত্তিক অপারেটিং সিস্টেম, যেমন: উবুন্টুতে ঐষীক লেআউট ব্যবহারের জন্য মূলত <span style="font-family: Belanosima;">ibus engine</span>
+                        ব্যবহৃত হয়। এজন্য প্রয়োজনীয় <span style="font-family: Belanosima;">mim</span> ফাইল সরবারহ করা হয়েছে। এছাড়া <span style="font-family: Belanosima;">XKB</span> এর মাধ্যমেও ব্যবহার করা যাবে।
+                    </p>
+                    <a href="https://github.com/OishikStudio/Oishik_for_Windows_and_Linux/releases/download/v1.0.3.40/linux.tar"
+                        class="btn btn-primary">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-1">
+        <div class="row align-items-center g-1 py-1">
+            <div class="col-lg-12">
+                <h1 class="display-6 text-body-emphasis lh-1 mb-3">কেন ঐষীক?</h1>
+                <p class="lead">কম্পিউটারে ইংরেজি লিখতে কি কোনো আলাদা সফটওয়ার ব্যবহার করতে হয়? অবশ্যই না। বরং উইন্ডোজের
+                    নিজস্ব ইনপুট মেথড সিস্টেমের মাধ্যমে ইংরেজি লেখা যায়।<br>
+                    তেমনি বাংলা লেখার জন্য মূলত আলাদা সফটওয়ার ব্যবহারের প্রয়োজন পড়ে না। উইন্ডোজে <i><a target="_blank"
+                        href="https://en.wikipedia.org/wiki/InScript_keyboard">ইন্সক্রিপ্ট</a></i> নামে একটি
+                    বাংলা কিবোর্ড অন্তর্ভুক্ত থাকে, যার মাধ্যমে উইন্ডোজের ইনপুট মেথড ব্যবহার করে বাংলা লেখা যায়। কিন্তু
+                    আপনি বিজয়ের অনুরূপ কিবোর্ড ব্যবহারে অভ্যস্ত হলে ইন্সক্রিপ্ট কিবোর্ডে দক্ষ নাও হতে পারেন।</p>
+            </div>
+            <div class="text-center py-3">
+                <div>
+                    <div class="container px-5">
+                        <img src="./elements/oishik layout.svg" class="d-block mx-lg-auto img-fluid" alt="Example image"
+                            width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+
+                <p class="lead">ঐষীক কিবোর্ডের মাধ্যমে বিজয়ের অনুরূপ একটি লেআউট ইনপুট মেথডে যুক্ত করে দিতে পারেন।
+                    ঐষীক কিবোর্ড মূলত কোনো কিবোর্ড নয়। এটি উইন্ডোজের ইনপুট মেথডে বিজয়ের অনুরূপ লেআউট যুক্ত করে দেয়ার
+                    একটি পদ্ধতি।
+                    উইন্ডোজে ঐষীক ইন্সটল করার মাধ্যমে আপনি অন্য কোনো থার্ড পার্টি সফটওয়ারের সহায়তা ছাড়াই বিজয়ের অনুরূপ
+                    লেআউটে বাংলা লিখতে পারবেন।
+                    অ্যান্ড্রয়েড অ্যাপে ঐষীক লেআউট ব্যবহার করার জন্য অ্যাপ থেকে বাংলা নামের লেআউটটি সচল করে নিতে হবে, যা
+                    বিজয়ের অনুরূপ কিবোর্ডের মতো কাজ করবে।</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-1">
+        <div class="row align-items-center g-1 py-1">
+            <div class="col-lg-12">
+                <h1 class="display-6  text-body-emphasis lh-1 mb-3">বিজয় এবং ঐষীক লেআউটের পার্থক্য</h1>
+                <p class="lead">বিজয় লেআউট মূলত আসকি ভিত্তিক বিজয় সফটওয়ারের সাথে কম্পাটিবল
+                    করার জন্য তৈরি করা হয়েছিল। এজন্য মূল বিজয় লেআউটে <i>ও</i> এর জন্য আলাদা একটি <span style="font-family: Belanosima;">key</span> রাখা হয়েছে, যেখানে ঐষীক
+                    লেআউটে আছে <i>ো (ও-কার)।</i> <br>বিজয় কিবোর্ডে এ-কার, ঐ-কার ব্যবহারের জন্য
+                    তা ব্যঞ্জনবর্ণের প্রথমে লিখতে হয়, যা পুরাতন পদ্ধতি। অন্যদিকে ঐষীক যেহেতু সিস্টেমের ইউনিকোড ভিত্তিক ইনপুট
+                    মেথড ব্যবহার করে, সেজন্য এতে স্বরবর্ণের কার সবসময় ব্যঞ্জনের পরে যুক্ত করতে হয়। <br>অন্যদিকে বিজয় লেআউটে
+                    <i>ো, ৌ</i> চিহ্নগুলো নেই,
+                    কারণ এগুলো বিজয় কিবোর্ডে ভেঙে লিখতে হয়। অন্যদিকে ঐষীক কিবোর্ডে ইউনিকোডের সাথে সামঞ্জস্য রাখার জন্য এই
+                    চিহ্নগুলো রাখা হয়েছে। <br>এছাড়া <i><a target="_blank"
+                            href="https://en.wikipedia.org/wiki/Zero-width_joiner"><span style="font-family: Belanosima;">ZERO-WIDTH JOINER</span></a>, <a target="_blank"
+                            href="https://en.wikipedia.org/wiki/Zero-width_non-joiner"><span style="font-family: Belanosima;">ZERO-WIDTH NON-JOINER</span></a></i> এর মতো
+                    কিছু বিশেষ ইউনিকোড ক্যারেক্টার ঐষীক কিবোর্ডে আছে, যা বাংলা টাইপিংয়ের জন্য মাঝেমাঝে প্রয়োজন পড়ে।
+                    অ্যান্ড্রয়েডের লেআউটে দাঁড়ি, খণ্ড ৎ,
+                    বিসর্গ, চন্দ্রবিন্দুর পজিশন মূল বিজয় কিবোর্ডের থেকে আলাদা।</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Oishik Studio</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="./legal/privacy/index.html">Privacy Policy</a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://rhjihan.github.io/">Contact</a></li>
+
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
