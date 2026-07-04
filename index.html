@@ -15,9 +15,9 @@
   <link rel="canonical" href="https://oishikstudio.github.io/">
 
   <!-- Favicons -->
-  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="./assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="./assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -40,10 +40,10 @@
   <meta name="twitter:image" content="https://oishikstudio.github.io/assets/img/thumbnail.jpg">
 
   <!-- Bootstrap Core CSS (local) -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Site styles -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
 
   <!-- Font Awesome (icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -72,7 +72,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-md py-3" aria-label="Primary">
         <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#">
-          <img class="brand-mark" src="assets/img/logo.svg" alt="" width="28" height="28">
+          <img class="brand-mark" src="./assets/img/logo.svg" alt="" width="28" height="28">
           Oishik Studio
         </a>
 
@@ -146,7 +146,7 @@
             <p class="text-body-secondary mb-3">
               An adaptation of the Unijoy layout for Android virtual keyboards.
             </p>
-            <a class="project-link" href="https://unijoy.pages.dev/unijoy" target="_blank" rel="noopener">
+            <a class="project-link" href="https://unijoy.pages.dev/android" target="_blank" rel="noopener">
               Visit project
               <i class="fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></i>
             </a>
@@ -174,7 +174,10 @@
   <!-- ==================== Footer ==================== -->
   <footer class="site-footer border-top border-secondary-subtle py-4">
     <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3 gap-sm-2">
-      <p class="mb-0 text-body-secondary small">&copy; <span id="year">2026</span> Oishik Studio</p>
+      <div class="d-flex flex-column flex-sm-row align-items-center gap-2 gap-sm-3">
+        <p class="mb-0 text-body-secondary small">&copy; <span id="year">2026</span> Oishik Studio</p>
+        <a class="inline-link small" href="./legal/privacy/index.html">Privacy Policy</a>
+      </div>
       <a class="footer-icon-link" href="https://github.com/OishikStudio" target="_blank" rel="noopener"
         aria-label="Oishik Studio on GitHub">
         <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
@@ -183,7 +186,7 @@
   </footer>
 
   <!-- Bootstrap Bundle JS (local) -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
