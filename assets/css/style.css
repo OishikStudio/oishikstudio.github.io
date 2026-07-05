@@ -115,13 +115,18 @@ footer .container {
 
 /* -------------------------------------------------------------- Footer */
 .site-footer {
-  background-color: #0b0d10;
+  font-size: 16px;
 }
 
-.footer-icon-link {
+.site-footer a {
   color: var(--bs-secondary-color);
-  display: inline-flex;
   text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible,
+.site-footer a:active {
+  color: var(--bs-emphasis-color);
 }
 
 .footer-icon-link:hover,
